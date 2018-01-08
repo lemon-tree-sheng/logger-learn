@@ -16,11 +16,11 @@
         </dependency>-->
 
         <!-- 依赖这一个可以下载下来相关依赖 slf4j-api log4j slf4j-log4j12 -->
-        <!--<dependency>
+        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.19</version>
-        </dependency>-->
+        </dependency>
 
         <!--  依赖这一个可以下载下来相关依赖 slf4j-api logback-core logback-classic-->
         <dependency>
@@ -28,6 +28,8 @@
             <artifactId>logback-classic</artifactId>
             <version>1.1.11</version>
         </dependency>
+
+        <!-- 当使用 slf4j 和不同日志框架实现时，比如 logback + log4j, 当出现项目依赖两个日志实现时，slf4j 按照最短依赖选择具体使用框架 -->
     </dependencies>
 
 </project>
