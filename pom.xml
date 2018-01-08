@@ -30,6 +30,13 @@
         </dependency>
 
         <!-- 当使用 slf4j 和不同日志框架实现时，比如 logback + log4j, 当出现项目依赖两个日志实现时，slf4j 按照最短依赖选择具体使用框架 -->
+
+        <!-- 华丽丽的分割线，上面那句话和这个依赖没有关系 :) -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+        </dependency>
     </dependencies>
 
 </project>
